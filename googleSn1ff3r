@@ -1,0 +1,78 @@
+# CODED BY SEPTO
+#https://www.youtube.com/channel/UCG-RIJ6OAt56vfIoLUxn18w
+#This tool was made for educational purposes!
+# Nao me responsabilizo por qualquer ato ilegal de sua parte !
+##############################
+clear
+echo -e 'G \033[01;31m o \033[01;33m o \033[01;34m g \033[01;32m l \033[01;31m e \033[00;37;40m'
+sleep 0.1
+echo -e ' S \033[01;31m n \033[01;33m 1 \033[01;34m f \033[01;32m f \033[01;31m 3 \033[00;37;40m r'
+sleep 0.1
+echo " "
+echo " [ 1 ] [ Procurar por cameras de seguranca por ai ] "
+	camera='inurl:"ViewerFrame?Mode=" -intitle:"viewerframe" -"By: Septo"'
+sleep 0.1
+echo " [ 2 ] [ Procurar por Nomes, Cpf's e E-mail's ] "
+	email='filetype:pdf intext:CPF intext:@~.com email -"By: Septo"'
+sleep 0.1
+echo " [ 3 ] [ Procurar por senhas pessoais ] "
+	senha='intext:senha OR intext:senhas filetype:txt -"By: Septo"'
+sleep 0.1
+echo " [ 4 ] [ Procurar por listas de E-mails ] "
+	emaillista='filetype:txt "@gmail." -"By: Septo"'
+sleep 0.1
+echo " [ 5 ] [ Procurar por listas de E-mails COM Senha ]"
+	emaillistacomsenha='filetype:txt "@gmail." -"by:Septo" senha password passwd'
+sleep 0.1
+echo " [ 6 ] [ Sair ]"
+sleep 0.1
+echo " [ 7 ] [ Verificar codigo de ANONIMATO ]"
+sleep 0.1
+echo -ne "\033[01;34mS\033[01;31mn\033[01;33mi\033[01;34mf\033[01;32mf\033[01;31mf\033[00;37;40m>> " & read resposta
+
+	if [ "$resposta" -eq 1 ]
+then
+	termux-clipboard-set $camera
+echo " "
+	echo "[ DORK COPIADA ! ]"
+fi
+
+	if [ "$resposta" -eq 2 ]
+then
+	termux-clipboard-set $email
+echo " "
+	echo "[ DORK COPIADA ! ]"
+fi
+
+	if [ "$resposta" -eq 3 ]
+then
+	termux-clipboard-set $senha
+echo " "
+	echo "[ DORK COPIADA ! ]"
+fi
+	if [ "$resposta" -eq 4 ]
+then
+	termux-clipboard-set $emaillista
+echo " "
+	echo "[ DORK COPIADA ! ]"
+fi
+	if [ "$resposta" -eq 5 ]
+then
+	termux-clipboard-set $emaillistacomsenha
+echo " "
+	echo "[ DORK COPIADA ! ]"
+fi
+	if [ "$resposta" -eq 6 ]
+then
+	echo -ne "\033[01;31m [ VOLTE SEMPRE ! ] \033[00;37;40m"
+	exit
+fi
+	if [ "$resposta" -ge 7 ]
+then
+urlzinha=`cat /data/data/com.termux/files/home/result.txt`
+	echo -ne "O seu codigo e : $urlzinha"
+fi
+
+echo -ne "\033[01;31m [ VOLTE SEMPRE ! ] \033[00;37;"
+echo -ne "\033[01;31m [ FEITO POR : SEPTO ] \033[00;37;"
+echo -ne "\033[01;31m [ #APOLOGY ] \033[00;37;"
