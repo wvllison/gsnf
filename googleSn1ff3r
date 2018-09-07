@@ -1,5 +1,5 @@
-# CODED BY SEPTO
-#https://www.youtube.com/channel/UCG-RIJ6OAt56vfIoLUxn18w
+
+
 #This tool was made for educational purposes!
 # Nao me responsabilizo por qualquer ato ilegal de sua parte !
 ##############################
@@ -74,5 +74,5 @@ urlzinha=`cat /data/data/com.termux/files/home/result.txt`
 fi
 
 echo -ne "\033[01;31m [ VOLTE SEMPRE ! ] \033[00;37;"
-echo -ne "\033[01;31m [ FEITO POR : SEPTO ] \033[00;37;"
-echo -ne "\033[01;31m [ #APOLOGY ] \033[00;37;"
+
+
